@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIXZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+        }
+
+        a:visited {
+            color:darkred
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+            
+            
+        }
+
+        a:active {
+            color: green
+        }
+
+        .especial {
+            background-color: rgb(243, 151, 151);
+        }
+
+        .especial::before{
+            content: ' ⇒ ';
+        }
+
+        .especial::after{
+            content: ' ⇐' ;
+        }
+
+       .destaque:hover {
+            background-color: rgb(247, 194, 194);
+       }
+
+       div > p {
+        display: none;
+
+       }
+       
+       div:hover > p {
+        display: block;
+        background-color: green;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <dt>
+        <dd><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" class="especial">Repositório GitHub</a></dd>
+        <dd><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal Youtube</a></dd>
+        <dd><a href="https://www.cursoemvideo.com/apoie/" target="_blank" class="destaque">Site do Curso em Video</a></dd>
+    </dt>
+    <br>
+    <br>
+    <div>
+        Quer aprender mais sobre esse assunto? <br> Ache o botão mágico e divirta-se no nosso repositório.
+
+        <p><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank">Clique aqui</a></p>
+    </div>
+
+    <p>Veja o botão mágico aparecendo</p>
+
+</body>
+</html>

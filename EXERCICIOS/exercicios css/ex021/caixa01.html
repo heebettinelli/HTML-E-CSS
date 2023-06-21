@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+
+        .body {
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        h1 {
+            background-color: aliceblue;
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            border: 5px solid darkgray;
+            /* SHORTHAND
+                -Border  segue a ordem: largura-altura-cor (nao usar , entre informações)
+            */
+            padding: 15px 10px;
+            /*
+            -Padding segue a ordem: top, rigth, bottom, left (sentido horário do relogio)
+
+                +Se os 4 valores forem iguais eu posso colocar apenas 1x e o mesmo se aplicará para os 4 lados.
+
+                +Se eu usar apenas 2 valores, aplica-se da seguinte maneira: 
+
+                top e bottom / rigth e left 
+
+                então se colocar padding 10px 15 px vou ter top e bottom com 10 px e rigth e left com 15 px.
+                */
+            margin: 20px auto 20px auto;
+        }
+        a {
+            border: 5px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level </a>vamos ver como tudo isso funciona.</p>
+</body>
+</html>

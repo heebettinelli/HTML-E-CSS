@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1> <!---para essa teg funcionar tem que ser colocada nesta ordem de baixo pra cima a teg e os sources de tamanho em forma decrescente de baixo para cima-->
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="Imagens flexiveis">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos reproduzir audio no HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="media/Nineties Pad - Brian Bolger.mp3" type="audio/mpeg">
+        <source src="media/Nineties Pad - Brian Bolger.mp3" type="audio/ogg">
+        <source src="media/Nineties Pad - Brian Bolger.mp3" type="audio/wav">   
+        <p>Em caso de falha no audio, significa que o seu navegador não suporta esse arquivo. <a href="media/Nineties Pad - Brian Bolger.mp3" download="Nineties Pad - Brian Bolger.mp3" type="audio/mpeg"> Você pode baixar o audio clicando neste link.</a>
+        </p>
+    </audio>
+    
+    <h1>Reproduzindo videos</h1>
+    <p>Vamos reproduzir audio no HTML5</p>
+    <video width=" 600px" preload="metadata" controls autoplay loop>
+        <source src="media/a65c4832.mp4" type="video/mp4">
+        <source src="media/a65c4832.mp4" type="video/ogv">
+        <source src="media/a65c4832.mp4" type="video/webm">
+        <p>Em caso de falha no <video src=""></video>, significa que o seu navegador não suporta esse arquivo. <a href="media/a65c4832.mp4" download="video-mar.mp4" type="video/mp4"> Voce pode baixar  o video clicando neste link.</a>
+        </p>
+    </video>
+
+</body>
+</html>
