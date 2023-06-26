@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cordel Moderno</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
-      @import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
       :root {
-        --fonte01: Verdana, Geneva, Tahoma, sans-serif;
-        --fonte02: "Passion One", Cursive;
-        --fonte03: "Sriracha", Cursive;
+        --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+        --fontetitulo: 'Passion One', cursive;
+        --fonteconteudo: 'Sriracha', cursive;
 
         --cor01: black;
         --cor02: white;
@@ -28,6 +28,7 @@
 
       html , body {
         min-height: 100vh;
+        font-family: var(--fonteconteudo);
         
 
       }
@@ -47,11 +48,11 @@
         font-size: 11vw;
         font-variant: small-caps;
         font-weight: bold;
-        font-family: var(--fonte02);
+        font-family: var(--fontetitulo);
       }
 
       .subtitulo {
-        font-family: var(--fonte01);
+        font-family: var(--fontepadrao);
         color: var(--cor02);
         text-align: center;
         font-size: 1em;
@@ -63,10 +64,12 @@
         padding-bottom: 10vh;
         line-height: 2em;
         padding-left: 30px;
+        font-family: var(--fonteconteudo);
+        font-size: 3vw;
       }
 
       section.normal{
-        background-color: var(--fonte02);
+        background-color: var(--fontetitulo);
         color: var(--cor01);
       }
 
@@ -76,7 +79,8 @@
       }
 
       section.imagem > p{
-        width: 400px;
+        padding: 10px;
+        display: inline-block;
         background-color: var(--cor03);
 
       }
