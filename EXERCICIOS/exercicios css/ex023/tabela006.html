@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        .tabela{
+            overflow-x: auto;
+        }
+        .cabecalho{
+            background-color: gray;
+        }
+        .produto{
+            background-color: gray;
+        }
+        tbody > tr > td:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quo accusamus dolorum assumenda delectus est quod, officiis impedit rerum reiciendis cupiditate quaerat deserunt explicabo maxime, ea minima, inventore perspiciatis ullam.</p> 
+   <div class="tabela">
+       <table>
+        <colgroup>
+            <col class="produto">
+        </colgroup>
+        <caption>Tabelas Responsivas</caption>
+        <thead>
+            <tr class="cabecalho">
+                <th>Produto</th>
+                <td>Jan</td>
+                <td>Fev</td>
+                <td>Mar</td>
+                <td>Abr</td>
+                <td>Mai</td>
+                <td>Jun</td>
+                <td>Jul</td>
+                <td>Ago</td>
+                <td>Set</td>
+                <td>Out</td>
+                <td>Nov</td>
+                <td>Dez</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Tv</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>Radio</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>Geladeira</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>Computador</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>Notebook</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>Tablet</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>Celular</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+       </table>
+   </div>
+</body>
+</html>
