@@ -13,10 +13,13 @@
         width: 500px;
         border-collapse: collapse;
       }
-      th,
-      td {
+      th, td {
         border: 1px solid black;
         padding: 10px;
+      }
+      th{
+        background-color: gray;
+        color: white;
       }
     </style>
   </head>
@@ -34,8 +37,8 @@
           <th rowspan="2">Média</th>
         </tr>
         <tr>
-          <td>Nota 1</td>
-          <td>Nota 2</td>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
         </tr>
       </thead>
       <tbody>
@@ -66,7 +69,7 @@
         </tr>
         <tr>
           <th colspan="4">Médias de Exatas</th>
-          <td>0.0</td>
+          <th>0.0</th>
         </tr>
         <tr>
           <th rowspan="3">Humanas</th>
@@ -85,7 +88,7 @@
         </tr>
         <tr>
           <th colspan="4">Média de Humanas</th>
-          <td>0.0</td>
+          <th>0.0</th>
         </tr>
       </tbody>
     </table>
