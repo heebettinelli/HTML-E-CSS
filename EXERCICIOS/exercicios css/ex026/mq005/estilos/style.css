@@ -18,8 +18,15 @@ header > h1 {
     text-align: center;
 }
 
-menu{
+span#burger {
+    background-color: rgb(50, 49, 49);
     display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+menu{
+    display: none;
 }
 
 menu > ul {
@@ -31,10 +38,15 @@ menu a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(91, 88, 88);
     color: white;
     border-top: 2px  solid gray;
 }
+
+span#burger:hover {
+background-color: white;
+color: black;
+} 
 
 menu a:hover {
     background-color: gray;
