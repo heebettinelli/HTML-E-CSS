@@ -35,9 +35,9 @@ p {
 
 
 section {
-    width: 250px;
-    height: 515px;
-    border: 2px solid black;
+    width: 375px;
+    height: 650px;
+    border:none;
     border-radius: 20px;
     background-color: var(--cor001);
     color: var(--cor003);
@@ -52,13 +52,13 @@ section#login {
 }
 
 div#img {
-    width: 100px;
-    height: 200px;
+    width: 375px;
+    height: 250px;
 
 }
 img{
-    width: 250px;
-    height: 200px;
+    width: 375px;
+    height: 250px;
     border-radius: 17px 17px 0px 0px ;
 }
 
