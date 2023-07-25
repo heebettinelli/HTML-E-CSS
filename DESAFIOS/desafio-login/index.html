@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <main>
-        <section id="login">
-            <div id="img">
-                foto
+      <section id="login">
+        <div id="img">
+          <img src="assets/pexels-sean-whang-804269.jpg" alt="foto login" />
+        </div>
+
+        <div id="form">
+          <h1>Login</h1>
+          <p>
+            Seja bem vindo(a) novamente. Faça login para acessar sua conta e
+            poder fazer as configurações no seu ambiente.
+          </p>
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+                <input type="email" name="iemail" id="email" placeholder="Seu e-mail" required/>
             </div>
-            <div id="form">
-                <h1>Login</h1>
-                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e oider fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post"></form>
-                
+            <div class="campo">
+                <input type="password" name="senha" id="isenha" placeholder="Sua senha" required minlength="8" maxlength="15"/>
             </div>
-        </section>
+            <input class="button" type="submit" value="Enviar">
+            <input class="button" type="submit" value="Recuperar senha">
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

@@ -7,5 +7,94 @@
     --cor002: #7F43FF;
     --cor003: #FAFAFA;
     --cor004: #000000; 
+
+    --font-principal: Arial, Helvetica, sans-serif; 
+    --font-destaque: 'Times New Roman', Times, serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: var(--font-principal);
+}
+
+h1 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+}
+
+p {
+    padding: 5px 10px 10px 10px ;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+section {
+    width: 250px;
+    height: 515px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: var(--cor001);
+    color: var(--cor003);
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+div#img {
+    width: 100px;
+    height: 200px;
+
+}
+img{
+    width: 250px;
+    height: 200px;
+    border-radius: 17px 17px 0px 0px ;
+}
+
+div#form {
+    text-align: center;
+}
+
+label {
+    padding: 5px;
+}
+
+.button {
+    width: 230px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor002);
+    color: var(--cor003);
+}
+
+div > input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+}
+
+div.campo {
+    background-color: var(--cor002);
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
 }
 
