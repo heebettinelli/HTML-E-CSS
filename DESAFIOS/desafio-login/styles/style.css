@@ -12,6 +12,8 @@
     --font-destaque: 'Times New Roman', Times, serif;
 }
 
+/*DECLARAÇÕES GERAIS*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -24,7 +26,7 @@ body {
 h1 {
     font-family: var(--font-destaque);
     text-align: center;
-    padding: 10px 10px 5px 10px;
+    padding: 10px
 }
 
 p {
@@ -33,52 +35,16 @@ p {
     font-size: 14px;
 }
 
-
-section {
-    width: 375px;
-    height: 650px;
-    border:none;
-    border-radius: 20px;
-    background-color: var(--cor001);
-    color: var(--cor004);
-}
-
 section#login {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-}
-
-div#img {
-    width: 375px;
-    height: 250px;
-
-}
-img{
-    width: 375px;
-    height: 250px;
-    border-radius: 17px 17px 0px 0px ;
 }
 
 div#form {
     text-align: center;
     padding-top: 20px;
-}
-
-label {
-    padding: 5px;
-}
-
-.button {
-    width: 250px;
-    height: 40px;
-    margin: 3px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--cor002);
-    color: var(--cor001);
 }
 
 div > input {
@@ -87,20 +53,6 @@ div > input {
     border-radius: 5px;
     border: none;
     margin: 2px;
-}
-
-div.campo {
-    background-color: var(--cor002);
-    width: 250px;
-    height: 40px;
-    text-align: center;
-    border-radius: 5px;
-    border: none;
-    margin: 5px;
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .email{
@@ -122,3 +74,94 @@ div.campo {
     padding: 3px;
     margin: 4px 1px 4px 40px;
 }
+
+/*DECLARAÇÕES PHONE*/
+
+@media screen and (orientation: portrait) {
+    div#img {
+        width: 375px;
+        height: 250px;
+    }
+    img{
+        width: 375px;
+        height: 250px;
+        border-radius: 17px 17px 0px 0px ;
+    }
+    section {
+        width: 375px;
+        height: 650px;
+        border:none;
+        border-radius: 20px;
+        background-color: var(--cor001);
+        color: var(--cor004);
+    }
+    div.campo {
+        background-color: var(--cor002);
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        margin: 5px;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .button {
+        width: 250px;
+        height: 40px;
+        margin: 3px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--cor002);
+        color: var(--cor001);
+    }
+}
+
+/*DECLARAÇÕES DESKTOP*/
+
+@media screen and (orientation: landscape) {
+    div#img {
+        width: 600px;
+        height: 250px;
+    }
+    img{
+        width: 600px;
+        height: 250px;
+        border-radius: 17px 17px 0px 0px ;
+    }
+    section {
+        width: 600px;
+        height: 550px;
+        border:none;
+        border-radius: 20px;
+        background-color: var(--cor001);
+        color: var(--cor004);
+    }
+    div.campo {
+        background-color: var(--cor002);
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        display: inline-block;
+        margin: 3px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+    .button {
+        width: 250px;
+        height: 40px;
+        margin: 3px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--cor002);
+        color: var(--cor001);
+        display: inline-block;
+        
+    }
+}
+
