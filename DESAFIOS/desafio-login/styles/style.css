@@ -3,9 +3,9 @@
 /*PALETA DE CORES*/
 
 :root {
-    --cor001: #191A23;
+    --cor001: #fafafa;
     --cor002: #7F43FF;
-    --cor003: #FAFAFA;
+    --cor003: #c5c2c2;
     --cor004: #000000; 
 
     --font-principal: Arial, Helvetica, sans-serif; 
@@ -28,7 +28,7 @@ h1 {
 }
 
 p {
-    padding: 5px 10px 10px 10px ;
+    padding: 5px 40px 20px 40px ;
     text-align: left;
     font-size: 14px;
 }
@@ -40,7 +40,7 @@ section {
     border:none;
     border-radius: 20px;
     background-color: var(--cor001);
-    color: var(--cor003);
+    color: var(--cor004);
 }
 
 section#login {
@@ -64,6 +64,7 @@ img{
 
 div#form {
     text-align: center;
+    padding-top: 20px;
 }
 
 label {
@@ -71,17 +72,17 @@ label {
 }
 
 .button {
-    width: 230px;
+    width: 250px;
     height: 40px;
     margin: 3px;
     border-radius: 5px;
     border: none;
     background-color: var(--cor002);
-    color: var(--cor003);
+    color: var(--cor001);
 }
 
 div > input {
-    width: 200px;
+    width: 190px;
     height: 25px;
     border-radius: 5px;
     border: none;
@@ -90,11 +91,34 @@ div > input {
 
 div.campo {
     background-color: var(--cor002);
-    width: 230px;
+    width: 250px;
     height: 40px;
     text-align: center;
     border-radius: 5px;
     border: none;
     margin: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
+.email{
+    background: url('https://api.iconify.design/iconamoon/email.svg?color=%23fafafa') no-repeat left center / contain;
+}
+
+.senha{
+    background: url('https://api.iconify.design/mdi/lock-outline.svg?color=%23fafafa') no-repeat left center / contain;
+}
+
+#iemail{
+    align-items: center;
+    padding: 3px;
+    margin: 4px 1px 4px 40px;
+}
+
+#isenha{
+    align-items: center;
+    padding: 3px;
+    margin: 4px 1px 4px 40px;
+}
